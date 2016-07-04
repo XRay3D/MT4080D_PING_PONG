@@ -8,7 +8,7 @@ QT       += core gui serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = untitled6
+TARGET = MT4080D_PING_PONG
 TEMPLATE = app
 
 
