@@ -47,7 +47,7 @@ void MainWindow::on_comboBox_2_currentIndexChanged(const QString& arg1)
     port.setParity(QSerialPort::NoParity);
     port.setFlowControl(QSerialPort::NoFlowControl);
     port.setPortName(arg1);
-
+    port.close();
     if (!port.open(TESTER::WriteOnly)) {
         qDebug() << "open err";
     }
